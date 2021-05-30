@@ -33,7 +33,7 @@
        
         
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView88"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tel" />
@@ -47,7 +47,7 @@
             android:inputType="number" /> "
         
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView88"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mail" />
@@ -86,5 +86,43 @@
             android:text="@string/elim" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/consTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cons_todos" />
+
+        <Button
+            android:id="@+id/cons1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cons_1" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textreturn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

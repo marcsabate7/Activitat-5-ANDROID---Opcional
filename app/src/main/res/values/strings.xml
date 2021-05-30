@@ -10,5 +10,7 @@
     <string name="ins">Ins</string>
     <string name="act">Act</string>
     <string name="elim">Elim</string>
+    <string name="cons_1">Cons. 1</string>
+    <string name="cons_todos">Cons. todos</string>
 
 </resources>
