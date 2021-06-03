@@ -1,6 +1,7 @@
 package cat.udl.eps.bbdd;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -9,11 +10,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
-
+public class MainActivity extends ListActivity{
 	private EditText txtNombre;
 	private EditText txtTel;
 	private EditText txtMail;
@@ -142,6 +143,7 @@ public class MainActivity extends Activity {
 		cons_todos.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				//Recuperamos los valores de los campos de texto
+
 				Cursor cursor = db2.rawQuery("select * from Usuarios",null);
 
 				String tableString = String.format("Results for all table:  %s\n", tableUsuariosName);
@@ -158,9 +160,6 @@ public class MainActivity extends Activity {
 				}
 				Toast.makeText(getApplicationContext(),"Showing all Users in the Database, scroll down!!",Toast.LENGTH_SHORT).show();
 				textreturn.setText(tableString);
-
-				//String sql = "DELETE FROM Usuarios WHERE nombre=?";
-				//db.execSQL(sql, args);
 			}
 		});
 		cons_1.setOnClickListener(new OnClickListener() {
