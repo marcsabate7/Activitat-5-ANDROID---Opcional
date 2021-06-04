@@ -14,7 +14,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends ListActivity{
+public class MainActivity extends Activity{
 	private EditText txtNombre;
 	private EditText txtTel;
 	private EditText txtMail;
